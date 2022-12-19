@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc-grid{
+    margin: 30px;
+    height: 50vh;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 90px);
+}
+
+button{
+    border: 1px solid white;
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover{
+    background-color: aqua;
+}
+
+.ac{
+    grid-column: span 2;
+}
+
+.ans{
+    grid-column: span 2;
+}
+
+.output{
+    background: #000;
+    grid-column: 1 / -1;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.previous-out, .current-out{
+    margin-left: auto;
+}
+
+.current-out{
+    font-size: 1.5rem;
+}
